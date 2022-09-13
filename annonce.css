@@ -51,8 +51,9 @@
     .item-c{
         grid-area:content;
         display: flex;
-        flex-flow: column ;
-    
+        flex-flow: row wrap;
+        height: fit-content;
+
     }
     .item-c-content{
         margin: 20px;
@@ -135,6 +136,11 @@
         font-size:40px;
     }
     /*CSS d item c=annonce  */
+    .item-c{
+        grid-area:content;
+        display: flex;
+        flex-flow: column ;
+    }
     .item-c-content{
         margin: 20px;
         background-color: white;
