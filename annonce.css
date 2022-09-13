@@ -1,0 +1,160 @@
+
+@media only screen and (min-width: 320px) { 
+    /*Desktop screen*/
+    /*CSS Global */
+    html, body,.container{ 
+        height : 100%; 
+    }
+    body{
+        margin: 0;
+    }
+    /*CSS de l'item-a= titre et ses elements */
+    .item-a{
+        grid-area:header;
+        background-color: rgba(33,150,243,255);
+        color: white;
+    }
+    .item-a h1{
+        margin-left: 10px;
+    }
+    /*CSS de l'item-b= choix de liste et ses elements */
+    .item-b {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto;
+        grid-template-areas: "allads myads";
+        background-color: rgba(33,150,243,255);
+    }
+    .item-b :hover {
+        
+        background-color: rgb(98, 130, 174);
+    }
+    .all-ads {
+        grid-area: allads;
+        background-color: rgb(94, 181, 224);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .my-ads{
+        grid-area: myads;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h2{
+        font-weight: normal;
+    }
+    /*CSS de l'item-c= annonces et ses elements */
+    .item-c{
+        grid-area:content;
+        display: flex;
+        flex-flow: column ;
+    
+    }
+    .item-c-content{
+        margin: 20px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .content-ad{
+        display: flex;
+        flex-flow: row  ;
+    }
+    img{
+        height: 100%;
+        border-radius: 5px;
+    }
+    .desc-ad{
+        margin-left: 20px;
+    }
+    .time-price{
+        display: flex;
+        flex-flow: row  ;
+        justify-content: space-around;
+    }
+    .time-price p{
+        margin-right: 20px;
+    }
+    .price{
+        font-weight: bold;
+    }
+    h4{
+        font-weight:normal
+    }
+
+    /*CSS de l'item-d=droits et ses elements */
+    .item-d{
+        grid-area:rights;
+        background-color: rgba(33,150,243,255);
+        color: white;
+        
+    }
+    .item-d h4{
+        margin-left: 10px;
+    }
+    /*CSS du container */
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px  80px  auto  80px;
+        flex-flow: column ;
+        grid-template-areas: 
+        "header"
+        "list"
+        "content"
+        "rights"; background-color: rgba(207,216,220,255);
+    }
+
+   
+
+
+}
+@media only screen and (min-width: 320px) and (max-width: 980px) { 
+    /* mobile screen*/
+    /*CSS du container */
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px  100px  auto  100px;
+        flex-flow: column ;
+        grid-template-areas: 
+        "header"
+        "list"
+        "content"
+        "rights";
+    }
+    /*CSS d item a = titre */
+    .item-a h1{
+        font-size:50px;
+    }
+    /*CSS d item b= choix list  */
+    .item-b h2{
+        font-size:40px;
+    }
+    /*CSS d item c=annonce  */
+    .item-c-content{
+        margin: 20px;
+        background-color: white;
+        border-radius: 5px;
+        height: 300px;
+        font-size:30px;
+    }
+
+    img{
+        height: 300px;
+        border-radius: 5px;
+    }
+    .desc-ad{
+        margin-left: 200px;
+    }
+    
+    /*CSS d item d = droits*/
+    .item-d h4{
+        font-size:30px;
+        font-weight: normal;
+    }
+    
+}

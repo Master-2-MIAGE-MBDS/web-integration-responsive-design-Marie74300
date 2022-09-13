@@ -1,0 +1,166 @@
+@media only screen and (min-width: 980px) { 
+    /*Desktop screen*/
+    /*CSS Global */
+    html, body,.container { 
+        height : 100%; 
+    }
+    body{
+        margin: 0;
+    }
+    h2,h3{
+        font-weight: normal;
+    }
+     /*CSS de l'item-a= titre et ses elements */
+    .item-a{
+        grid-area:header;
+        background-color:  rgba(33,150,243,255);
+        color: white;
+    }
+    .item-a h1{
+        margin-left: 10px;
+    }
+    /*CSS de l'item-b= bienvenue et ses elements */
+    .item-b{
+        grid-area:welcome;
+        background-color: rgba(207,216,220,255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    img{
+        border-radius: 100%;
+        background-color: white;
+        max-width: 30%;  
+        height: 30%;  
+    }
+    /*CSS de l'item-c= formulaire et ses elements */
+    .item-c{
+        
+        grid-area:form;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+     
+    .formulaire {
+        display: flex;
+        flex-flow: column ;
+        height: 20rem;
+        align-items: center;
+    }
+    .div-form-login{
+        margin-top: 20px;
+    }
+    #username, #password{
+        background-color: rgba(241,245,247,255);
+        border:none;
+        height:50px;
+        width: 280px;
+        
+    }
+    .div-form-submit{
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+    .form-submit{
+        border:none;
+        background-color: rgba(33,150,243,255);
+        height:50px;
+        width: 280px;
+    }
+    /*CSS de l'item-d=droits et ses elements */
+    .item-d{
+        grid-area:rights;
+        background-color: rgba(33,150,243,255);
+        color: white;
+    }
+    .item-d h4{
+        margin-left: 10px;
+        font-weight: normal;
+    }
+     /*CSS du container */
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px  500px  auto  80px;
+        flex-flow: column ;
+        grid-template-areas: 
+        "header"
+        "welcome"
+        "form"
+        "rights";
+    }
+
+   
+
+
+}
+@media only screen and (min-width: 320px) and (max-width: 980px) { 
+    /* mobile screen*/
+    /*CSS du container */
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px  500px  auto  100px;
+        flex-flow: column ;
+        grid-template-areas: 
+        "header"
+        "welcome"
+        "form"
+        "rights";
+    }
+    /*CSS d item a = titre */
+    .item-a h1{
+        font-size:50px;
+    }
+    /*CSS d item b= welcome  */
+    .item-b h2{
+        font-size:50px;
+    }
+    .item-b h3{
+        font-size:30px;
+    }
+    img{
+         
+        height: 50%;  
+    }
+    /*CSS du formulaire et ses elements */
+    .formulaire {
+        display: flex;
+        flex-flow: column ;
+        height: 40rem;
+        align-items: center;
+    }
+    .div-form-login{
+        margin-top: 20px;
+    }
+    #username, #password{
+        background-color: rgba(241,245,247,255);
+        border:none;
+        height:100px;
+        width: 500px;
+        font-size:50px;
+        
+    }
+    .div-form-submit{
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+    .form-submit{
+        border:none;
+        background-color: rgba(33,150,243,255);
+        height:100px;
+        width: 500px;
+        font-size:50px;
+    }
+    /*CSS d item d = droits*/
+    .item-d h4{
+        font-size:30px;
+        font-weight: normal;
+    }
+    
+}
